@@ -100,15 +100,15 @@ function volume() {
     if (load_done) {
         vol = document.getElementById("vol").value;
         document.getElementById("volume").innerHTML = vol;
-        document.getElementById('timeup').volume = vol/100
+        document.getElementById('timeup').volume = vol/100;
         localStorage.setItem("tomato_vol",vol);
     }
 }
 
 function load_vol() {
     vol = localStorage.getItem("tomato_vol") != null ? parseInt(localStorage.getItem("tomato_vol")) : 100;
-    document.getElementById("vol").value = vol
+    document.getElementById("vol").value = vol;
     document.getElementById("volume").innerHTML = vol;
-    document.getElementById('timeup').volume = vol/100
+    document.getElementById('timeup').volume = vol/100;
     load_done = true;
 }

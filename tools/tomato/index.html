@@ -13,34 +13,31 @@
         gtag('config', 'G-YMZ31FE099');
     </script>
 
-    <script src="../../cc.js"></script>
+    <script src="../../global.js"></script>
 
     <title>番茄鐘</title>
-    <link rel="stylesheet" href="./to">
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="../../Resource/icon.png">
+    
     <script src="clock.js"></script>
 </head>
 
-<body style="background-color: black;" onload=load_at();cc();load_vol();>
+<body style="background-color: black;" onload=load_at();load_vol();load_info();>
     <audio id="timeup">
         <source src="boxing-bell-single.mp3" type="audio/mp3">
     </audio>
+
     <div class="topbar text">
         <a href="../index.html">
-            <img src="../Resource/icon.png" alt="icon">
+            <img src="../../Resource/icon.png" alt="icon">
         </a>
         <a href="../index.html">
             <div>
                 <p>回上頁</p>
-                <p class="text">&lt;&lt;回首頁將會清除目前階段</p>
             </div>
         </a>
     </div>
-    <!-- </div>
-        <div class="topnav">
-            <a class="active" href="../../index.html">回首頁</a>
-            <p class="text">&lt;&lt;回首頁將會清除目前階段</p>
-        </div> -->
     <h1 style="color: white;">番茄鐘</h1>
     <hr>
     <div class="text">
@@ -71,7 +68,11 @@
     <h2 class="text">什麼是番茄鐘</h2>
     <h3 class="text">番茄工作法是一種時間管理方法，在1980年代由Francesco
         Cirillo創立。該方法使用一個定時器來分割出一個一般為25分鐘的工作時間和5分鐘的休息時間，而那些時間段被稱為pomodoros。這個方法可以有效提高工作或讀書效率。</h3>
-    <p class="text" id="cc"></p>
+        
+    <footer class="text">
+        <p id="version"></p>
+        <p id="cc"></p>
+    </footer>
 </body>
 
 </html>

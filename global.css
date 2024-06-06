@@ -128,7 +128,7 @@ li a:hover:not(.unopen) {
 
 /*Buttons*/
 
-.button {
+.button:not(li) {
     background-color: black;
 }
 

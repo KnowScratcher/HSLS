@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-Hant">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMZ31FE099"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YMZ31FE099');
+        </script>
+
+        <script src="../../cc.js"></script>
+        
+        <title>資訊一上一段解析</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../ico.png">
+    </head>
+    <body style="background-color: black;" onload=cc();>
+        <div class="topnav">
+            <a class="active" href="../../index.html">回首頁</a>
+            <a href="../index.html">回上頁</a>
+        </div>
+        <h1 style="color: white;">一上一段解析</h1>
+        <hr>
+        <h2 class="text">修正公告:需考慮小朋友數量為0的情況</h2>
+        <h2 class="text">應在「a % c == 0」前加上「c == 0 or 」，詳情請見程式碼</h2>
+        <video src="f165.mp4" type="video/mp4" controls="true"></video>
+        <hr>
+        <h2 class="text">題目:</h2>
+        <img src="期中考題一.jpg" alt="題目">
+        <h2 class="text">本次講義</h2>
+        <ul>
+            <li><a target="_blank" href="./期中考題一.jpg" download>題目(新分頁)</a></li>
+            <li><a target="_blank" href="https://jamboard.google.com/d/1WJCh1yetXCKiFGEoicoQiWnFaYrvID1-078vNwKJv98/viewer?f=0">思路(新分頁)</a></li>
+            <li><a target="_blank" href="./answer.py">程式碼(下載)</a></li>
+        </ul>
+        <br style="clear: both;">
+        <pre><p class="text">程式碼:
+a,c = list(map(int,input().split()))
+
+#基礎
+
+if c == 0 or a % c == 0:
+    print("OK!")
+else:
+    print(a % c)
+
+#進階
+print("OK!" if c == 0 or a % c == 0 else a % c)
+        </p></pre>
+        
+        <p class="text">本次測試資料:<br>15 8<br>
+            7<br><br>
+
+            20 5<br>
+            OK!<br><br>
+            
+            0 11<br>
+            OK!<br><br>
+            
+            18 0<br>
+            OK!<br><br>
+            
+            17 17<br>
+            OK!<br><br>
+            
+            0 0<br>
+            OK!<br><br>
+            
+            10 12<br>
+            10<br><br>
+            
+            41 1<br>
+            OK!<br><br>
+            
+            1 1<br>
+            OK!<br><br>
+            
+            255 256<br>
+            255</p>
+        <p class="text" id="cc"></p>
+        
+    </body>
+</html>

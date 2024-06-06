@@ -1,0 +1,48 @@
+/*Web Page Control*/
+
+.lesson {
+    color: white;
+    width:430px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.lesson:hover {
+    background-color: rgb(134, 130, 75);
+}
+
+.hide {
+    display: none;
+}
+
+
+/*Buttons*/
+
+
+
+
+/*Text Control*/
+
+
+
+
+/*align control*/
+
+
+
+
+/*Animations*/
+
+@keyframes hover {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: rgb(134, 130, 75);
+    }
+}
+

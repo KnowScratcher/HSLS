@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-Hant">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMZ31FE099"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YMZ31FE099');
+        </script>
+        
+        <title>Modal Test</title>
+        <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body style="background-color: black;">
+        
+        <div class="topnav">
+            <a class="active" href="../index.html">回首頁</a>
+        </div>
+
+        <h1 class="text">Modal Test</h1>
+        <hr>
+        
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="sleep" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>咦? 是不是該睡了啊! 雖然很有心，但是身體健康還是比較重要喔!</h2>
+            </div>
+            <script src="./modal.js"></script>
+        </div>
+
+        <br style="clear: both;">
+        <p class="text" style="clear: both;">Copyright © Know Scratcher 2023<br>CC BY-NC-SA</p>
+        
+    </body>
+</html>

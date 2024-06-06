@@ -1,0 +1,61 @@
+/*Web Page Control*/
+
+/*Buttons*/
+
+.button {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    position: relative;
+    animation-name: main_frame_buttons;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+
+.big_button {
+    width: 90%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px 5px;
+    margin-left: 4%;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    animation-name: main_frame_buttons;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+
+
+/*Text Control*/
+
+
+
+
+/*align control*/
+
+
+
+
+/*Animations*/
+
+@keyframes main_frame_buttons {
+    0% {
+        left: -100px;
+        opacity: 0;
+    }
+
+    60% {
+        left: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}

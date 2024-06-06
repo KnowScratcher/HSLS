@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-Hant">
+
+<head>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./video.css">
+    <script src="../global.js"></script>
+    <script src="./getLessons.js"></script>
+    <title>課程影片</title>
+</head>
+
+<body onload="get_lesson();load_info();">
+
+    <div class="topbar text">
+        <a href="../index.html">
+            <img src="../Resource/icon.png" alt="icon">
+        </a>
+        <a href="../index.html">
+            <div>
+                <p>回上頁</p>
+            </div>
+        </a>
+    </div>
+    <p style="height: 70px;"></p>
+    <h1 class="text" style="text-align: center;">課程影片</h1>
+    <div class="content text" id="lesson_box">
+        <div style="height: 300px;">
+            <a href="./play/index.html?vid=">
+                <div class="lesson" style="display: inline-block;">
+                    <p style="text-align: center;"><b>name</b></p>
+                    <img src="../Resource/icon.png" alt="" style="float: right;width: 250px;">
+                    <p style="text-align: left;margin-left: 5px;">講者: teacher</p>
+                    <p style="text-align: left;margin-left: 5px;">影片長度: time</p>
+                    <p style="text-align: left;margin-left: 5px;">版本: edition</p>
+                    <p class="hide">link</p>
+                </div>
+            </a>
+            <a href="./play/index.html?vid=">
+                <div class="lesson" style="display: inline-block;">
+                    <p style="text-align: center;"><b>name</b></p>
+                    <img src="../Resource/icon.png" alt="" style="float: right;width: 250px;">
+                    <p style="text-align: left;margin-left: 5px;">講者: teacher</p>
+                    <p style="text-align: left;margin-left: 5px;">影片長度: time</p>
+                    <p style="text-align: left;margin-left: 5px;">版本: edition</p>
+                    <p class="hide">link</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="loading" id="loading">
+        <div class="loading_content">
+            <h1>載入中...</h1>
+        </div>
+    </div>
+    <footer class="text">
+        <p id="version"></p>
+        <p id="cc"></p>
+
+    </footer>
+</body>
+
+</html>

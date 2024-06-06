@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="zh-Hant">
+
+<head>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./global.js"></script>
+    <title>高中生自主學習系統</title>
+</head>
+
+<body onload="load_info();">
+
+    <div class="topbar text">
+        <a href="./index.html">
+            <img src="./Resource/icon.png" alt="icon">
+        </a>
+    </div>
+    <p style="height: 70px;"></p>
+    <a href="./old/index.html">
+        <div class="button center" style="color: gold;" onclick="loading();">
+            <p><b>新版網站尚未完工，點我前往舊版網站</b></p>
+        </div>
+    </a>
+    <div class="flex">
+        <div style="flex-grow: 1;">
+            <a href="./video/index.html">
+                <div class="button text center" onclick="loading();">
+                    <p><b>課程影片</b></p>
+                </div>
+            </a>
+        </div>
+        <div style="flex-grow: 1;">
+            <a href="./tools/index.html">
+                <div class="button text center" onclick="loading()">
+                    <p><b>小工具</b></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <br style="display: none;">
+    <br>
+    <div class="loading" id="loading">
+        <div class="loading_content">
+            <img src="./Resource/loading.gif" alt="loading" style="height: 50px;">
+            <h1>載入中...</h1>
+        </div>
+    </div>
+    <div>
+        <a href="./about/index.html">
+            <div class="big_button text center" onclick="loading();">
+                <p><b>關於我們</b></p>
+            </div>
+        </a>
+    </div>
+    <footer class="text">
+        <p id="version"></p>
+        <p id="cc"></p>
+    </footer>
+</body>
+
+</html>
